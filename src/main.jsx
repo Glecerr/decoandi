@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
 
-// Lista ampliada de productos lista para que sumes tus fotos
+// Lista ampliada de productos
 const PRODUCTOS = [
   // --- Categoría: Día de la Madre / Fechas Especiales ---
   {
@@ -30,7 +30,7 @@ const PRODUCTOS = [
       incluye: '1 Taza + 1 Cuchara de cerámica + Regalo',
     }
   },
-   {
+  {
     id: 3,
     categoria: 'fechas-especiales',
     nombre: 'taza feliz dia mama',
@@ -39,9 +39,8 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/feliz.jpg' }
     ],
     especificaciones: {
-  
       capacidad: 'Taza 350ml'
- }
+    }
   },
   {
     id: 4,
@@ -61,7 +60,6 @@ const PRODUCTOS = [
     id: 5,
     categoria: 'fechas-especiales',
     nombre: 'mate mama ',
-
     desc: ' mate mama .',
     media: [
       { tipo: 'imagen', url: '/matemama1.jpg' }
@@ -113,7 +111,8 @@ const PRODUCTOS = [
       piezas: 'mate',
       capacidad: '250ml'
     }
-  },{
+  },
+  {
     id: 9,
     categoria: 'fechas-especiales',
     nombre: 'Set de Té Hello Kitty',
@@ -127,7 +126,8 @@ const PRODUCTOS = [
       piezas: 'Tetera + Taza apilable',
       capacidad: 'Tetera 500ml / Taza 250ml'
     }
-  },{
+  },
+  {
     id: 10,
     categoria: 'fechas-especiales',
     nombre: 'Set de Té Hello Kitty',
@@ -158,7 +158,7 @@ const PRODUCTOS = [
     }
   },
 
-  // --- Categoría: futbol ---
+  // --- Categoría: Fútbol ---
   {
     id: 1,
     categoria: 'futbol',
@@ -188,7 +188,7 @@ const PRODUCTOS = [
       piezas: 'Tetera + Taza'
     }
   },
-{
+  {
     id: 3,
     categoria: 'futbol',
     nombre: 'Juego de Té Botánico Pastel',
@@ -215,7 +215,8 @@ const PRODUCTOS = [
       diseno: 'Ilustración botánica pintada a mano',
       piezas: 'Tetera + Taza'
     }
-  },{
+  },
+  {
     id: 8,
     categoria: 'futbol',
     nombre: 'Juego de Té Botánico Pastel',
@@ -242,7 +243,8 @@ const PRODUCTOS = [
       diseno: 'Ilustración botánica pintada a mano',
       piezas: 'Tetera + Taza'
     }
-  },{
+  },
+  {
     id: 10,
     categoria: 'futbol',
     nombre: 'Juego de Té Botánico Pastel',
@@ -256,7 +258,7 @@ const PRODUCTOS = [
       piezas: 'Tetera + Taza'
     }
   },
-{
+  {
     id: 11,
     categoria: 'futbol',
     nombre: 'Juego de Té Botánico Pastel',
@@ -269,7 +271,8 @@ const PRODUCTOS = [
       diseno: 'Ilustración botánica pintada a mano',
       piezas: 'Tetera + Taza'
     }
-  },{
+  },
+  {
     id: 12,
     categoria: 'futbol',
     nombre: 'Juego de Té Botánico Pastel',
@@ -297,7 +300,6 @@ const PRODUCTOS = [
       piezas: 'Tetera + Taza'
     }
   },
-
   {
     id: 15,
     categoria: 'futbol',
@@ -389,8 +391,8 @@ const PRODUCTOS = [
       piezas: 'Tetera + Taza'
     }
   },
-  
-    // --- Categoría: Infantiles / Dibujitos ---
+
+  // --- Categoría: Infantiles / Dibujitos ---
   {
     id: 1,
     categoria: 'infantiles',
@@ -409,23 +411,28 @@ const PRODUCTOS = [
     nombre: 'Taza de mafalda',
     desc: 'Modelos mafalda con plato y tetera.',
     media: [
-      { tipo: 'imagen', url: 'mafa.jpg' }],
+      { tipo: 'imagen', url: 'mafa.jpg' }
+    ],
     especificaciones: {
       capacidad: '330 ml',
       material: 'Cerámica reforzada'
     }
-  },
-
+  }
 ];
 
 function App() {
   const [filtro, setFiltro] = useState('todos');
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
   const [mediaActiveIndex, setMediaActiveIndex] = useState(0);
+  const [mostrarTodos, setMostrarTodos] = useState(false);
 
   const productosFiltrados = filtro === 'todos' 
     ? PRODUCTOS 
     : PRODUCTOS.filter(p => p.categoria === filtro);
+
+  const productosVisibles = mostrarTodos 
+    ? productosFiltrados 
+    : productosFiltrados.slice(0, 5);
 
   const abrirModal = (producto) => {
     setProductoSeleccionado(producto);
@@ -489,7 +496,10 @@ function App() {
             <button
               key={cat.id}
               className={`filter-btn ${filtro === cat.id ? 'active' : ''}`}
-              onClick={() => setFiltro(cat.id)}
+              onClick={() => {
+                setFiltro(cat.id);
+                setMostrarTodos(false);
+              }}
             >
               {cat.label}
             </button>
@@ -497,8 +507,8 @@ function App() {
         </div>
 
         <div className="product-grid">
-          {productosFiltrados.map((item) => (
-            <div className="product-card" key={item.id} onClick={() => abrirModal(item)} style={{ cursor: 'pointer' }}>
+          {productosVisibles.map((item, index) => (
+            <div className="product-card" key={`${item.categoria}-${item.id}-${index}`} onClick={() => abrirModal(item)} style={{ cursor: 'pointer' }}>
               <div className="product-card-img-wrapper">
                 <img src={item.media[0].url} alt={item.nombre} className="product-card-img" />
                 <span className="product-badge">Decoandi</span>
@@ -516,6 +526,20 @@ function App() {
             </div>
           ))}
         </div>
+
+        {/* Botón Toggle Ver más / Ver menos */}
+        {productosFiltrados.length > 5 && (
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <button 
+              className="btn-primary" 
+              onClick={() => setMostrarTodos(!mostrarTodos)}
+            >
+              {mostrarTodos 
+                ? 'Ver menos modelos ⬆️' 
+                : `Ver todos los modelos (${productosFiltrados.length}) ⬇️`}
+            </button>
+          </div>
+        )}
       </section>
 
       {/* Sección Nosotros */}
