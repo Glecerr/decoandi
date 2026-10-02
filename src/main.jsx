@@ -73,8 +73,13 @@ const PRODUCTOS = [
   {
     id: 6,
     categoria: 'fechas-especiales',
+<<<<<<< HEAD
     nombre: 'mate mama ',
     desc: 'mate mama',
+=======
+    nombre: 'taza mama ',
+    desc: 'taza mama',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     media: [
       { tipo: 'imagen', url: '/matemama2.jpg' }
     ],
@@ -115,8 +120,12 @@ const PRODUCTOS = [
   {
     id: 9,
     categoria: 'fechas-especiales',
+<<<<<<< HEAD
     nombre: 'Set de Té Hello Kitty',
     precio: '$18.500',
+=======
+    nombre: 'taza mi mama es la mejor',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
     media: [
       { tipo: 'imagen', url: '/mimama.jpg' }
@@ -130,8 +139,12 @@ const PRODUCTOS = [
   {
     id: 10,
     categoria: 'fechas-especiales',
+<<<<<<< HEAD
     nombre: 'Set de Té Hello Kitty',
     precio: '$18.500',
+=======
+    nombre: 'taza feliz dia mama',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
     media: [
       { tipo: 'imagen', url: '/tazaplatomama.jpg' }
@@ -145,8 +158,12 @@ const PRODUCTOS = [
   {
     id: 11,
     categoria: 'fechas-especiales',
+<<<<<<< HEAD
     nombre: 'Set de Té Hello Kitty',
     precio: '$18.500',
+=======
+    nombre: 'taza te quiero mama',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
     media: [
       { tipo: 'imagen', url: '/tequieromama.jpg' }
@@ -162,8 +179,12 @@ const PRODUCTOS = [
   {
     id: 1,
     categoria: 'futbol',
+<<<<<<< HEAD
     nombre: 'Set de Té Hello Kitty',
     precio: '$18.500',
+=======
+    nombre: 'taza messi con llavero',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
     media: [
       { tipo: 'imagen', url: '/messi.jpg' }
@@ -177,8 +198,12 @@ const PRODUCTOS = [
   {
     id: 2,
     categoria: 'futbol',
+<<<<<<< HEAD
     nombre: 'Juego de Té Botánico Pastel',
     precio: '$16.000',
+=======
+    nombre: 'taza las malvinas son argentinas',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
     media: [
       { tipo: 'imagen', url: '/malvina.jpg' }
@@ -191,7 +216,11 @@ const PRODUCTOS = [
   {
     id: 3,
     categoria: 'futbol',
+<<<<<<< HEAD
     nombre: 'Juego de Té Botánico Pastel',
+=======
+    nombre: 'taza remera messi',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     precio: '$16.000',
     desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
     media: [
@@ -205,7 +234,11 @@ const PRODUCTOS = [
   {
     id: 7,
     categoria: 'futbol',
+<<<<<<< HEAD
     nombre: 'Juego de Té Botánico Pastel',
+=======
+    nombre: 'taza barril del 10',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     precio: '$16.000',
     desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
     media: [
@@ -219,7 +252,11 @@ const PRODUCTOS = [
   {
     id: 8,
     categoria: 'futbol',
+<<<<<<< HEAD
     nombre: 'Juego de Té Botánico Pastel',
+=======
+    nombre: 'tierra de diego y lionel',
+>>>>>>> 27d6bfe (Actualización del proyecto)
     precio: '$16.000',
     desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
     media: [
