@@ -14,8 +14,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/felizdiamama.jpg' }
     ],
     especificaciones: {
-      capacidad: '350 ml',
-      detalles: 'Apta microondas y lavavajillas',
+     diseno: 'taza feliz dia mama',
     }
   },
   {
@@ -27,7 +26,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/mamabandeja.JPG' }
     ],
     especificaciones: {
-      incluye: '1 Taza + 1 Cuchara de cerámica + Regalo',
+   diseno: 'set  regalo mama', 
     }
   },
   {
@@ -39,7 +38,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/feliz.jpg' }
     ],
     especificaciones: {
-      capacidad: 'Taza 350ml'
+      diseno: 'taza feliz dia mama',
     }
   },
   {
@@ -51,9 +50,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/mamateamo.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'Taza + Plato',
-      capacidad: 'Taza 350ml'
+      diseno: 'taza y plato mama te amo',
     }
   },
   {
@@ -65,10 +62,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama1.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'mate',
-      capacidad: '250ml'
-    }
+     diseno: 'mate mama', 
   },
   {
     id: 6,
@@ -79,9 +73,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama2.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'mate',
-      capacidad: ' 250ml'
+     diseno: 'taza mama',
     }
   },
   {
@@ -93,9 +85,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama3.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'mate',
-      capacidad: '250ml'
+    diseno: 'mate mama',
     }
   },
   {
@@ -107,51 +97,44 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama4.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'mate',
-      capacidad: '250ml'
+   diseno: 'mate mama',
     }
   },
   {
     id: 9,
     categoria: 'fechas-especiales',
     nombre: 'taza mi mama es la mejor',
-    desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
+    desc: 'taza de cerámica con ilustración y mensaje "Mi Mamá es la Mejor", ideal para regalar en fechas especiales.',
     media: [
       { tipo: 'imagen', url: '/mimama.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'Tetera + Taza apilable',
-      capacidad: 'Tetera 500ml / Taza 250ml'
+      diseno: 'taza mi mama es la mejor',
     }
   },
   {
     id: 10,
     categoria: 'fechas-especiales',
     nombre: 'taza feliz dia mama',
-    desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
+    desc: 'taza de cerámica con ilustración y mensaje "Feliz Día Mamá", ideal para regalar en fechas especiales.',
     media: [
       { tipo: 'imagen', url: '/tazaplatomama.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'Tetera + Taza apilable',
-      capacidad: 'Tetera 500ml / Taza 250ml'
+      diseno: 'taza feliz dia mama',
     }
   },
   {
     id: 11,
     categoria: 'fechas-especiales',
     nombre: 'taza te quiero mama',
-    desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
+    desc: 'taza de cerámica con ilustración y mensaje "Te Quiero Mamá", ideal para regalar en fechas especiales.',
     media: [
       { tipo: 'imagen', url: '/tequieromama.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'Tetera + Taza apilable',
-      capacidad: 'Tetera 500ml / Taza 250ml'
+     diseno: 'taza te quiero mama',
+  
     }
   },
 
@@ -160,230 +143,219 @@ const PRODUCTOS = [
     id: 1,
     categoria: 'futbol',
     nombre: 'taza messi con llavero',
-    desc: 'Tetera apilable con taza integrada modelada en cerámica con rostro de Hello Kitty.',
+    desc: 'taza de messi.',
     media: [
       { tipo: 'imagen', url: '/messi.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica esmaltada artesanal',
-      piezas: 'Tetera + Taza apilable',
-      capacidad: 'Tetera 500ml / Taza 250ml'
+     diseno: 'taza de messi con llavero',
+      
     }
   },
   {
     id: 2,
     categoria: 'futbol',
     nombre: 'taza las malvinas son argentinas',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    desc: 'taza de cerámica con ilustración de las malvinas, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/malvina.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'las malvinas son argentinas',
+     
     }
   },
   {
     id: 3,
     categoria: 'futbol',
     nombre: 'taza remera messi',
-    precio: '$16.000',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    desc: 'taza de cerámica de la remera de messi, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/messi2.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'taza de la remera de messi',
+      
     }
   },
   {
     id: 7,
     categoria: 'futbol',
     nombre: 'taza barril del 10',
-    precio: '$16.000',
     desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
     media: [
       { tipo: 'imagen', url: '/birra.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: ' barril de cerveza con el escudo de 10',
+    
     }
   },
   {
     id: 8,
     categoria: 'futbol',
     nombre: 'tierra de diego',
-    precio: '$16.000',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    desc: 'taza de cerámica con ilustración de la argentina con cancion, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/tierra.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'tierra de diego',
+  
     }
   },
   {
     id: 9,
     categoria: 'futbol',
-    nombre: 'Juego de Té Botánico Pastel',
-    precio: '$16.000',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    nombre: 'snoopy arg',
+    desc: 'taza de snoopy con la remera argentina.',
     media: [
       { tipo: 'imagen', url: '/snoopy arg.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'snopy argentino',
+      
     }
   },
   {
     id: 10,
     categoria: 'futbol',
-    nombre: 'Juego de Té Botánico Pastel',
-    precio: '$16.000',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    nombre: 'tricampeones',
+    desc: 'taza de tricampeones.',
     media: [
       { tipo: 'imagen', url: '/1978.jpg' }
     ],
     especificaciones: {
       diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
-    }
+  
   },
+  
   {
     id: 11,
     categoria: 'futbol',
-    nombre: 'Juego de Té Botánico Pastel',
-    precio: '$16.000',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    nombre: 'Conjunto del 10',
+    desc: 'taza y plato del 10.',
     media: [
       { tipo: 'imagen', url: '/tazayplato10.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'messi',
+  
     }
   },
   {
     id: 12,
     categoria: 'futbol',
-    nombre: 'Juego de Té Botánico Pastel',
-    precio: '$16.000',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    nombre: 'Tazon 10',
+    desc: 'Tazon de ceramica con el escudo de 10, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/tazon10.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: '10',
+  
     }
   },
   {
     id: 13,
     categoria: 'futbol',
-    nombre: 'Juego de Té Botánico Pastel',
-    precio: '$16.000',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    nombre: 'Taza de messi ',
+    desc: 'Taza de ceramica con el escudo de messi, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/pasion.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'messi',
+    
     }
   },
   {
     id: 15,
     categoria: 'futbol',
-    nombre: 'taza de boca juniors',
-    desc: 'taza de ceramica con el escudo de boca juniors, ideal para fanáticos del fútbol.',
+    nombre: 'Taza de Boca Juniors',
+    desc: 'Taza de ceramica con el escudo de boca juniors, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/tboca.jpg' }
     ],
     especificaciones: {
       diseno: 'boca',
-      piezas: 'Tetera + Taza'
+      
     }
   },
   {
     id: 16,
     categoria: 'futbol',
-    nombre: 'taza de boca juniors',
+    nombre: 'Taza de Boca Juniors',
     desc: 'taza de ceramica con el escudo de boca juniors, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/tboca2.jpg' }
     ],
     especificaciones: {
       diseno: 'boca',
-      piezas: ' Taza'
+      
     }
   },
   {
     id: 17,
     categoria: 'futbol',
-    nombre: 'taza de argentinos juniors',
+    nombre: 'Taza de Argentinos Juniors',
     desc: 'taza de ceramica con el escudo de argentinos juniors, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/argjr.jpg' }
     ],
     especificaciones: {
-      diseno: 'argentinos juniors',
-      piezas: ' Taza'
+      diseno: 'Argentinos juniors',
+     
     }
   },
   {
     id: 18,
     categoria: 'futbol',
-    nombre: 'taza de velez',
-    desc: 'taza de ceramica con el escudo de velez, ideal para fanáticos del fútbol.',
+    nombre: 'Taza de Velez',
+    desc: 'Taza de ceramica con el escudo de velez, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/velez.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'velez',
+    
     }
   },
   {
     id: 19,
     categoria: 'futbol',
-    nombre: 'taza de independiente',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    nombre: 'Taza de independiente',
+    desc: 'Taza de cerámica con el escudo de independiente, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/indp.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'independiente',
+      
     }
   },
   {
     id: 20,
     categoria: 'futbol',
-    nombre: 'taza de river',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    nombre: 'Taza de river',
+    desc: 'Taza de cerámica con el escudo de river, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/carp.jpg' }
     ],
     especificaciones: {
-      diseno: 'Ilustración botánica pintada a mano',
-      piezas: 'Tetera + Taza'
+      diseno: 'river',
     }
   },
   {
     id: 21,
     categoria: 'futbol',
     nombre: 'taza de huracan',
-    desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
+    desc: 'Taza de cerámica con el escudo de huracan, ideal para fanáticos del fútbol.',
     media: [
       { tipo: 'imagen', url: '/huracan.jpg' }
     ],
     especificaciones: {
       diseno: 'huracan',
-      piezas: 'Tetera + Taza'
     }
   },
 
@@ -397,7 +369,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/tetera.jpg' }
     ],
     especificaciones: {
-      material: 'Cerámica reforzada'
+      diseno: 'hello kity',
     }
   },
   {
@@ -409,9 +381,8 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: 'mafa.jpg' }
     ],
     especificaciones: {
-      capacidad: '330 ml',
-      material: 'Cerámica reforzada'
-    }
+      diseno: 'mafalda',
+    } 
   }
 ];
 
