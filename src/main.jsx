@@ -252,11 +252,11 @@ const PRODUCTOS = [
   {
     id: 8,
     categoria: 'futbol',
-<<<<<<< HEAD
+<<<<<<< HEAD    
     nombre: 'Juego de Té Botánico Pastel',
 =======
     nombre: 'tierra de diego y lionel',
->>>>>>> 27d6bfe (Actualización del proyecto)
+>>>>>>> 27d6bfe (Actualización del proyecto)  
     precio: '$16.000',
     desc: 'Tetera y taza apilable con acabados botánicos y colores pastel.',
     media: [
