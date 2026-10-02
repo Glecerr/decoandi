@@ -62,8 +62,9 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama1.jpg' }
     ],
     especificaciones: {
-     diseno: 'mate mama', 
+     diseno: 'mate mama', }
   },
+  
   {
     id: 6,
     categoria: 'fechas-especiales',
@@ -73,9 +74,10 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama2.jpg' }
     ],
     especificaciones: {
-     diseno: 'taza mama',
+      diseno: 'taza mama',
     }
   },
+  
   {
     id: 7,
     categoria: 'fechas-especiales',
@@ -85,7 +87,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama3.jpg' }
     ],
     especificaciones: {
-    diseno: 'mate mama',
+      diseno: 'mate mama',
     }
   },
   {
@@ -97,7 +99,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/matemama4.jpg' }
     ],
     especificaciones: {
-   diseno: 'mate mama',
+      diseno: 'mate mama',
     }
   },
   {
@@ -133,8 +135,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/tequieromama.jpg' }
     ],
     especificaciones: {
-     diseno: 'taza te quiero mama',
-  
+      diseno: 'taza te quiero mama',
     }
   },
 
@@ -148,8 +149,7 @@ const PRODUCTOS = [
       { tipo: 'imagen', url: '/messi.jpg' }
     ],
     especificaciones: {
-     diseno: 'taza de messi con llavero',
-      
+      diseno: 'taza de messi con llavero',
     }
   },
   {
@@ -162,7 +162,6 @@ const PRODUCTOS = [
     ],
     especificaciones: {
       diseno: 'las malvinas son argentinas',
-     
     }
   },
   {
@@ -175,7 +174,6 @@ const PRODUCTOS = [
     ],
     especificaciones: {
       diseno: 'taza de la remera de messi',
-      
     }
   },
   {
@@ -188,7 +186,6 @@ const PRODUCTOS = [
     ],
     especificaciones: {
       diseno: ' barril de cerveza con el escudo de 10',
-    
     }
   },
   {
@@ -201,7 +198,6 @@ const PRODUCTOS = [
     ],
     especificaciones: {
       diseno: 'tierra de diego',
-  
     }
   },
   {
@@ -214,7 +210,6 @@ const PRODUCTOS = [
     ],
     especificaciones: {
       diseno: 'snopy argentino',
-      
     }
   },
   {
@@ -227,9 +222,8 @@ const PRODUCTOS = [
     ],
     especificaciones: {
       diseno: 'Ilustración botánica pintada a mano',
-  
+    }
   },
-  
   {
     id: 11,
     categoria: 'futbol',
@@ -240,7 +234,6 @@ const PRODUCTOS = [
     ],
     especificaciones: {
       diseno: 'messi',
-  
     }
   },
   {
